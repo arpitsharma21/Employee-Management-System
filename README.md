@@ -8,7 +8,7 @@ This project is built using:
   
   ## Features:
  1. It has login page with :
-          username = arpit
+          username = arpit,  
           password = 12345
  2. It performs CRUD operation on employees:
             Add Employee
