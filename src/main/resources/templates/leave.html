@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title>Leave</title>
+</head>
+<body>
+<section>
+	<div class="card col-md-8 offset-md-2 ">
+			<div class="card-body">
+				<h1 class="text-center">Leave application</h1>
+				<div class="container  mt-1 ">
+					<div class="row">
+						<div class="col-md-8 offset-md-2">
+						
+							<form  target="_blank" method="post" class="mt-2"
+							enctype="multipart/form-data">
+
+								<!-- first Name -->
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<div class="input-group-text ">
+											<i class="fa fa-plus mb-2"></i>
+										</div>
+									</div>
+									<input type="text" id="name" 
+										placeholder="Enter name here" class="form-control" required />
+								</div>
+
+								<!-- Email -->
+								<div class="input-group mt-3">
+									<div class="input-group-prepend">
+										<div class="input-group-text ">
+											<i class="fa fa-email mb-2">@</i>
+										</div>
+									</div>
+									<input type="text" id="email" 
+										placeholder="Enter email id here" class="form-control" required />
+								</div>
+
+								<!-- Date -->
+								<div class="input-group mt-3">
+									<div class="input-group-prepend">
+										<div class="input-group-text ">
+											<i class="fa-solid fa-calendar-days mb-2"></i>
+										</div>
+									</div>
+									<input type="datetime-local" id="date" 
+										placeholder="Select date here" class="form-control" required />
+								</div>
+								
+								<!-- Reason -->
+								<div class="form-group mt-3">
+									<textarea  placeholder="Enter Reason"
+										id="reason" class="form-control" cols="30" rows="5"></textarea>
+								</div>
+
+								<br> 
+								<div class="container text-center">
+									<button class="btn btn-outline-primary">Send Request
+									</button>
+								</div>
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+	
+	
+<script>
+	var btn  = document.getElementById('btn');
+	btn.addEventListener('click',function(e){
+		e.preventDefault()
+		console.log('hi');
+	})
+
+</script>
+	
+	
+</body>
+</html>

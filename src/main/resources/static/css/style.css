@@ -1,0 +1,56 @@
+body{
+	background: #e2e2e2;
+}
+ 
+ .sidebar{ 
+	width:18%;
+	background: white;
+	height: 100%;
+	position:fixed;
+	padding-top: 45px;
+	z-index :999999999;
+}
+
+.sidebar .crossBtn{
+	position: absolute;
+	top:0;
+	right:35px;
+	font-size: 36px;
+	cursor: pointer;
+}
+
+.sidebar a{
+	display: block;
+	width: 100%;
+	padding: 10px 25px;
+	text-decoration: none;
+	color: gray;
+}
+
+.sidebar a:hover{
+	background: #e2e2e2;
+}
+ 
+ .sidebar .divider{
+	height: .5px;
+	width:100%;
+	background: #e2e2e2;
+	margin-top:10px;
+}
+
+.content{
+	margin-left: 20%;
+}
+
+
+.my-card{
+	padding: 20px;
+	background: white;
+}
+
+.divider:after, .divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
